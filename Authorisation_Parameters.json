@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "NBConsult Managed Service"
+        },
+        "mspOfferDescription": {
+            "value": "NBConsult Managed Service"
+        },
+        "managedByTenantId": {
+            "value": "69daf984-59d5-415b-a9b1-aa3b30b4a677"
+        },
+        "authorizations": {
+            "value": [
+                {
+                    "principalId": "71b91ea6-c47a-4a07-b7c5-b92ace0d2f79",
+                    "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Read",
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
+                },
+                {
+                    "principalId": "71b91ea6-c47a-4a07-b7c5-b92ace0d2f79",
+                    "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Read",
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46"
+                },
+                {
+                    "principalId": "c1a983b0-8780-4fe4-9124-d6b7be227cd9",
+                    "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Contributor",
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+                }
+            ]
+        }
+    }
+}
