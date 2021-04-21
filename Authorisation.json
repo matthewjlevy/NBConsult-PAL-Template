@@ -11,18 +11,37 @@
         },
         "mspOfferDescription": {
             "type": "string",
+            "defaultValue": "NBConsult Managed Service",
             "metadata": {
                 "description": "Name of the Managed Service Provider offering"
             }
         },
         "managedByTenantId": {
             "type": "string",
+            "defaultValue": "69daf984-59d5-415b-a9b1-aa3b30b4a677",
             "metadata": {
                 "description": "Specify the tenant id of the Managed Service Provider"
             }
         },
         "authorizations": {
             "type": "array",
+            "defaultValue": [
+                {
+                    "principalId": "71b91ea6-c47a-4a07-b7c5-b92ace0d2f79",
+                    "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Read",
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
+                },
+                {
+                    "principalId": "71b91ea6-c47a-4a07-b7c5-b92ace0d2f79",
+                    "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Read",
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46"
+                },
+                {
+                    "principalId": "c1a983b0-8780-4fe4-9124-d6b7be227cd9",
+                    "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Contributor",
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+                }
+            ],
             "metadata": {
                 "description": "Specify an array of objects, containing tuples of Azure Active Directory principalId, a Azure roleDefinitionId, and an optional principalIdDisplayName. The roleDefinition specified is granted to the principalId in the provider's Active Directory and the principalIdDisplayName is visible to customers."
             }
