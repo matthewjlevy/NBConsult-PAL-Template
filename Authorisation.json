@@ -24,7 +24,8 @@
             }
         },
         "authorizations": {
-            "value": [
+            "type": "array",
+            "defaultValue": [
                 {
                     "principalId": "71b91ea6-c47a-4a07-b7c5-b92ace0d2f79",
                     "principalIdDisplayName": "NBConsult | Azure Lighthouse | Customer Read",
@@ -41,8 +42,8 @@
                     "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
                 }
             ]
-            
-        }              
+        }
+                      
     },
     "variables": {
         "mspRegistrationName": "[guid(parameters('mspOfferName'))]",
